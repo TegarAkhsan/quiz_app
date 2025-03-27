@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/screens/homequiz_page.dart';
 import 'package:quiz_app/screens/intro_page.dart';
 
 class OnboardingPage extends StatelessWidget {
