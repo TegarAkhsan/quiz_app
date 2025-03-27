@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'quizselection_page.dart';
+import 'homequiz_page.dart';
 
 class Question {
   final String question;
@@ -87,8 +87,7 @@ class _QuizPageState extends State<QuizPage> {
             onPressed: () {
               Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(
-                    builder: (context) => const QuizselectionPage()),
+                MaterialPageRoute(builder: (context) => const HomeQuizPage()),
                 (route) => false,
               );
             },

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'quiz_page.dart';
 
-class QuizselectionPage extends StatelessWidget {
-  const QuizselectionPage({super.key});
+class HomeQuizPage extends StatelessWidget {
+  const HomeQuizPage({super.key});
 
   @override
   Widget build(BuildContext context) {

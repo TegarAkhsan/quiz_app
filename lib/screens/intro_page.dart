@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'quizselection_page.dart';
+import 'homequiz_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -36,8 +36,7 @@ class IntroPage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => const QuizselectionPage()),
+                  MaterialPageRoute(builder: (context) => const HomeQuizPage()),
                 );
               },
               style: ElevatedButton.styleFrom(
