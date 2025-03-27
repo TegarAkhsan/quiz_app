@@ -117,7 +117,7 @@ class _QuizPageState extends State<QuizPage> {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -134,24 +134,20 @@ class _QuizPageState extends State<QuizPage> {
             ...List.generate(questions[currentIndex].options.length, (index) {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8.0),
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width - 20,
-                  child: ElevatedButton(
-                    onPressed: () => _answerQuestion(index),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      padding: const EdgeInsets.symmetric(vertical: 16),
+                child: ElevatedButton(
+                  onPressed: () => _answerQuestion(index),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    child: Text(
-                      questions[currentIndex].options[index],
-                      style: const TextStyle(
-                          color: Color(0xFF6345F1),
-                          fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  ),
+                  child: Text(
+                    questions[currentIndex].options[index],
+                    style: const TextStyle(
+                        color: Color(0xFF6345F1), fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
                   ),
                 ),
               );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/screens/home_page.dart';
+import 'package:quiz_app/screens/quizselection_page.dart';
 // import 'intro_page.dart';
-import 'home_page.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -12,7 +12,7 @@ class OnboardingPage extends StatelessWidget {
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
+        MaterialPageRoute(builder: (context) => const QuizselectionPage()),
       );
     });
 
